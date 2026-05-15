@@ -57,7 +57,8 @@
 .bs-input input:focus { outline: 0; border-color: var(--color-brand); }
 .bs-input button { background: var(--color-brand); color: white; border: 0; width: 2.25rem; height: 2.25rem; border-radius: 50%; cursor: pointer; font-weight: 700; }
 
-.bs-personas { background: #f1f5f9; border-top: 1px solid var(--color-border); padding: 0.5rem 0.75rem; display: flex; gap: 0.4rem; overflow-x: auto; font-size: 1rem; }
+.bs-personas { background: #f1f5f9; border-top: 1px solid var(--color-border); padding: 0.5rem 0.75rem; display: flex; gap: 0.4rem; overflow-x: auto; font-size: 1rem; white-space: nowrap; align-items: center; }
+.bs-personas > * { flex-shrink: 0; white-space: nowrap; }
 .bs-personas .chip { background: white; border: 1px solid var(--color-border); border-radius: 9999px; padding: 0.25rem 0.625rem; white-space: nowrap; }
 
 .bs-cta {
