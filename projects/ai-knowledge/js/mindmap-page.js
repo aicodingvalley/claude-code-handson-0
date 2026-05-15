@@ -68,7 +68,7 @@ const LEAF_FG_OF = { "#6366f1": "#312e81", "#ec4899": "#831843", "#334155": "#0f
       forceAtlas2Based: {
         gravitationalConstant: -40,
         centralGravity: 0.002,
-        springLength: 130,
+        springLength: 60,
         springConstant: 0.02,
         damping: 0.55,
         avoidOverlap: 0.95,
