@@ -22,7 +22,7 @@ const LEAF_FG_OF = { "#6366f1": "#312e81", "#ec4899": "#831843", "#334155": "#0f
     },
     font: {
       color: n.fontColor ?? "#0f172a",
-      size: n.tier === "center" ? 22 : n.tier === "persona" ? 14 : 11.5,
+      size: n.tier === "center" ? 26 : n.tier === "persona" ? 18 : 16,
       face: "Pretendard, -apple-system, sans-serif",
       bold: n.tier !== "leaf",
       strokeWidth: 0,
