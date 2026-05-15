@@ -1,0 +1,40 @@
+// 데모용 샘플 매출 데이터 — 엑셀에서 파싱한 결과를 대신합니다
+export const SAMPLE = {
+  target: 520_000_000,
+  trend: [
+    { month: "2025-06", revenue: 312_000_000, txn: 1_820 },
+    { month: "2025-07", revenue: 298_000_000, txn: 1_760 },
+    { month: "2025-08", revenue: 345_000_000, txn: 2_010 },
+    { month: "2025-09", revenue: 372_000_000, txn: 2_180 },
+    { month: "2025-10", revenue: 401_000_000, txn: 2_350 },
+    { month: "2025-11", revenue: 438_000_000, txn: 2_510 },
+    { month: "2025-12", revenue: 512_000_000, txn: 2_940 },
+    { month: "2026-01", revenue: 388_000_000, txn: 2_220 },
+    { month: "2026-02", revenue: 402_000_000, txn: 2_280 },
+    { month: "2026-03", revenue: 451_000_000, txn: 2_540 },
+    { month: "2026-04", revenue: 478_000_000, txn: 2_680 },
+    { month: "2026-05", revenue: 506_000_000, txn: 2_830 },
+  ],
+  categories: [
+    { name: "리빙",   revenue: 168_000_000 },
+    { name: "패션",   revenue: 142_000_000 },
+    { name: "뷰티",   revenue:  98_000_000 },
+    { name: "식품",   revenue:  62_000_000 },
+    { name: "가전",   revenue:  36_000_000 },
+  ],
+  products: [
+    { name: "프리미엄 캔들 세트",   revenue:  58_400_000, units:  812, growth: 18.4 },
+    { name: "오가닉 코튼 셔츠",     revenue:  47_200_000, units: 1_240, growth:  9.2 },
+    { name: "휴대용 에스프레소",    revenue:  41_800_000, units:   520, growth: 24.1 },
+    { name: "비건 스킨케어 키트",   revenue:  38_500_000, units:   695, growth: -3.4 },
+    { name: "스마트 도어락 v3",     revenue:  32_900_000, units:   181, growth: 11.7 },
+    { name: "수면 유도 디퓨저",     revenue:  29_400_000, units:   612, growth:  5.0 },
+    { name: "무선 노이즈 캔슬링 이어버드", revenue: 27_100_000, units:  340, growth: -1.8 },
+  ],
+  channels: [
+    { name: "🛒 자사몰",    share: 42.3 },
+    { name: "🟢 네이버",    share: 28.6 },
+    { name: "🟡 카카오",    share: 17.5 },
+    { name: "🏬 오프라인",  share: 11.6 },
+  ],
+};

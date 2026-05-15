@@ -1,7 +1,7 @@
 {
-  "name": "marketing-pulse",
+  "name": "sales-dashboard",
   "version": "1.0.0",
-  "description": "Claude Code 핸즈온 C 섹션 — GA 마케팅 대시보드 + AI 인사이트",
+  "description": "Claude Code 핸즈온 C 섹션 — 엑셀 업로드 매출 대시보드 + AI 매출 예측",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,5 +11,5 @@
   "devDependencies": {
     "serve": "^14.2.1"
   },
-  "keywords": ["google-analytics", "dashboard", "marketing", "ai-insights"]
+  "keywords": ["sales", "dashboard", "excel", "forecast", "ai"]
 }
