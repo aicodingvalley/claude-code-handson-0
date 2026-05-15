@@ -1,0 +1,9 @@
+[
+  { "name": "이도윤",      "ts": "오전 9:10", "avatar": { "letter": "도", "color": "#34d399" }, "body": "오늘 PR 리뷰 도와주실 분 🙋 #1284 #1287 두 개 있어요. 둘 다 작은 변경이에요." },
+  { "name": "박세현",      "ts": "오전 9:14", "avatar": { "letter": "세", "color": "#60a5fa" }, "body": "1284 제가 볼게요. 1287은 누가요?" },
+  { "name": "AI 코딩밸리", "ts": "오전 9:15", "avatar": { "letter": "나", "color": "#fbbf24" }, "body": "1287 잡아갈게요. 점심 전까지 코멘트 남길게요!" },
+  { "name": "이도윤",      "ts": "오전 9:16", "avatar": { "letter": "도", "color": "#34d399" }, "body": "감사합니다 🙏 staging 배포는 12시쯤 예정이에요." },
+  { "name": "Linda Chen",  "ts": "오전 9:31", "avatar": { "letter": "L", "color": "#2dd4bf" }, "lang": "en", "flag": "🇺🇸", "body": "Heads up — the rate limit on /api/orders is hitting 429 in our load tests. Need to bump it before Thursday.", "translation": "참고로 /api/orders 의 rate limit이 부하 테스트에서 429를 치고 있어요. 목요일 전에 올려야 해요." },
+  { "name": "박세현",      "ts": "오전 9:38", "avatar": { "letter": "세", "color": "#60a5fa" }, "body": "확인했어요. 60 → 200 으로 올리고 Redis TTL도 같이 손볼게요." },
+  { "name": "이도윤",      "ts": "오전 9:51", "avatar": { "letter": "도", "color": "#34d399" }, "body": "Sentry에 어제 새 에러 한 건 떴어요. NPE 같은데 같이 보실 분 있나요?", "reactions": ["👀 2"] }
+]

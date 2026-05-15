@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogCraft 블로그 관리</title>
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- 목록 뷰 -->
+        <section id="listView" class="view">
+            <header class="admin-header">
+                <h1>BlogCraft 블로그 관리</h1>
+                <div class="header-meta">
+                    <span id="statusInfo" class="status-info">총 5건 · 마지막 동기화 방금 전</span>
+                    <button id="refreshBtn" class="refresh-btn" type="button">새로고침</button>
+                </div>
+            </header>
+
+            <main class="admin-main">
+                <ul id="postList" class="post-list"></ul>
+            </main>
+
+            <nav class="pagination" id="pagination"></nav>
+        </section>
+
+        <!-- 상세/편집 뷰 -->
+        <section id="detailView" class="view hidden">
+            <header class="admin-header">
+                <button id="backBtn" class="back-btn" type="button">← 목록</button>
+                <h1>글 편집</h1>
+                <div class="header-meta"></div>
+            </header>
+
+            <main class="detail-main">
+                <div class="card">
+                    <h2 class="card-title">글 정보</h2>
+                    <dl class="info-grid">
+                        <dt>작성일시</dt><dd id="detailDate"></dd>
+                        <dt>타깃 독자</dt><dd id="detailCustomer"></dd>
+                        <dt>카테고리</dt><dd id="detailType"></dd>
+                        <dt>제목</dt><dd id="detailTitle"></dd>
+                        <dt>발행 상태</dt><dd id="detailStatus"></dd>
+                    </dl>
+                    <p class="content-label">주제 · 톤</p>
+                    <blockquote id="detailContent" class="content-box"></blockquote>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">본문</h2>
+                        <button id="aiGenerateBtn" class="secondary-btn" type="button">✨ AI 글 생성</button>
+                    </div>
+                    <textarea
+                        id="answerInput"
+                        class="answer-textarea"
+                        placeholder="본문을 작성하거나 'AI 글 생성' 버튼을 눌러 초안을 받아보세요."
+                        rows="10"
+                    ></textarea>
+                    <p id="aiStatus" class="ai-status"></p>
+                    <p id="answeredMeta" class="answered-meta"></p>
+                    <div class="form-actions">
+                        <button id="saveBtn" class="primary-btn" type="button">저장</button>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="./js/blog-admin.js"></script>
+</body>
+</html>

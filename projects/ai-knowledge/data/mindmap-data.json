@@ -1,0 +1,40 @@
+{
+  "centerLabel": "신규 가입자\n30% 늘리기",
+  "tokens": 1420,
+  "oneLine": "\"가입을 늘리려면, 목표(기획)·유입(마케팅)·문턱(개발)·머무는 이유(디자인)를 함께 다뤄야 한다.\"",
+  "nodes": [
+    { "id": 0, "label": "신규 가입자\n30% 늘리기", "bg": "#10b981", "border": "#047857", "fontColor": "white", "size": "lg", "shape": "ellipse" },
+
+    { "id": 1, "label": "💼 김기획\n기획 관점",   "bg": "#3b82f6", "border": "#1d4ed8", "fontColor": "white", "size": "md" },
+    { "id": 2, "label": "📢 조마케\nMZ 관점",     "bg": "#f43f5e", "border": "#be123c", "fontColor": "white", "size": "md" },
+    { "id": 3, "label": "⚙️ 이개발\n시스템 관점", "bg": "#475569", "border": "#1e293b", "fontColor": "white", "size": "md" },
+    { "id": 4, "label": "🎨 박디자\n감성 관점",   "bg": "#a855f7", "border": "#7e22ce", "fontColor": "white", "size": "md" },
+
+    { "id": 11, "label": "성공 KPI 3개 정의",     "bg": "#dbeafe", "border": "#3b82f6" },
+    { "id": 12, "label": "2주 단위 실험 루프",    "bg": "#dbeafe", "border": "#3b82f6" },
+    { "id": 13, "label": "회수 시나리오 점검",    "bg": "#dbeafe", "border": "#3b82f6" },
+
+    { "id": 21, "label": "MZ 인플루언서\n5명 협업", "bg": "#fee2e2", "border": "#ef4444" },
+    { "id": 22, "label": "한 줄 캐치프레이즈",       "bg": "#fee2e2", "border": "#ef4444" },
+    { "id": 23, "label": "릴스 + UGC 챌린지",        "bg": "#fee2e2", "border": "#ef4444" },
+
+    { "id": 31, "label": "SNS 간편가입 1-탭",       "bg": "#e2e8f0", "border": "#475569" },
+    { "id": 32, "label": "이탈 지점 트래킹",         "bg": "#e2e8f0", "border": "#475569" },
+    { "id": 33, "label": "이메일 인증 단계 제거",    "bg": "#e2e8f0", "border": "#475569" },
+
+    { "id": 41, "label": "상징적 이미지 한 장",     "bg": "#f3e8ff", "border": "#a855f7" },
+    { "id": 42, "label": "15초 영상 시리즈",         "bg": "#f3e8ff", "border": "#a855f7" },
+    { "id": 43, "label": "여백 있는 첫 화면",        "bg": "#f3e8ff", "border": "#a855f7" }
+  ],
+  "edges": [
+    { "from": 0, "to": 1, "width": 2, "color": "#94a3b8" },
+    { "from": 0, "to": 2, "width": 2, "color": "#94a3b8" },
+    { "from": 0, "to": 3, "width": 2, "color": "#94a3b8" },
+    { "from": 0, "to": 4, "width": 2, "color": "#94a3b8" },
+
+    { "from": 1, "to": 11 }, { "from": 1, "to": 12 }, { "from": 1, "to": 13 },
+    { "from": 2, "to": 21 }, { "from": 2, "to": 22 }, { "from": 2, "to": 23 },
+    { "from": 3, "to": 31 }, { "from": 3, "to": 32 }, { "from": 3, "to": 33 },
+    { "from": 4, "to": 41 }, { "from": 4, "to": 42 }, { "from": 4, "to": 43 }
+  ]
+}

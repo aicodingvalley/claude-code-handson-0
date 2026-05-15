@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>싱싱박스 고객상담 · 뚜비</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/chat.css" />
+</head>
+<body class="chat-screen">
+
+<div class="chat-card">
+  <header class="chat-header">
+    <a class="back" href="./index.html">←</a>
+    <div class="avatar">🥬</div>
+    <div style="flex:1">
+      <div class="title">싱싱박스 · 뚜비</div>
+      <div class="sub">● 24시간 응답 · 회사 문서 5개 로드됨</div>
+    </div>
+    <button class="menu">⋮</button>
+  </header>
+
+  <section id="messages" class="chat-messages scrollbar-thin"></section>
+
+  <div class="quick-replies">
+    <button>배송 조회</button>
+    <button>교환·반품</button>
+    <button>멤버십 혜택</button>
+  </div>
+
+  <div class="chat-input-bar">
+    <button class="icon-btn" type="button">📎</button>
+    <input id="user-input" placeholder="메시지를 입력하세요…" autocomplete="off" />
+    <button id="send-btn" class="send-btn" type="button">→</button>
+  </div>
+</div>
+
+<script type="module" src="./js/chat-ui.js"></script>
+</body>
+</html>

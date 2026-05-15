@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FinHub Weekly · AI 경제 리포트</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/report.css" />
+</head>
+<body>
+
+<nav class="fh-nav">
+  <div class="fh-nav-inner">
+    <a class="fh-brand" href="../../index.html">
+      <div class="fh-logo">F</div>
+      <div>
+        <div style="font-weight:700">FinHub Weekly</div>
+        <div style="font-size:0.65rem;color:var(--color-text-muted)">AI 경제 리포트</div>
+      </div>
+    </a>
+    <div class="fh-actions">
+      <span style="font-size:0.75rem;color:var(--color-text-muted)" id="title-meta">로딩 중…</span>
+      <button class="fh-btn fh-btn-outline">📄 PDF</button>
+      <a href="./index.html" class="fh-btn fh-btn-primary" style="text-decoration:none">💹 지표 대시보드</a>
+    </div>
+  </div>
+</nav>
+
+<div class="cli-bar">
+  <div class="cli-bar-inner">
+    <span class="dot"></span>
+    <code>$ claude /report --week latest</code>
+    <span style="margin-left:auto;font-size:0.75rem;color:#94a3b8">생성 완료 · 4.7초</span>
+  </div>
+</div>
+
+<main class="fh-grid">
+  <article id="article" class="report-article">로딩 중…</article>
+  <aside style="display:flex;flex-direction:column;gap:1rem">
+    <div class="card">
+      <h3>📚 최근 발행</h3>
+      <ul id="report-history" class="indicator-list" style="list-style:none;padding:0;margin:0;"></ul>
+    </div>
+  </aside>
+</main>
+
+<script type="module" src="./js/report-page.js"></script>
+</body>
+</html>

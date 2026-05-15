@@ -1,0 +1,15 @@
+{
+  "name": "ai-knowledge",
+  "version": "1.0.0",
+  "description": "Claude Code 핸즈온 E 섹션 — 멀티 페르소나 브레인스토밍 + 마인드맵",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5177 --no-clipboard",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["subagent", "personas", "brainstorm", "mindmap"]
+}

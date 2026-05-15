@@ -1,0 +1,5 @@
+course-demo.zip
+.DS_Store
+node_modules/
+.claude/
+.gstack/

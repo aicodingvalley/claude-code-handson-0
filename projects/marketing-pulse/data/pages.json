@@ -1,0 +1,7 @@
+[
+  { "path": "/products/organic-vegetables", "views": 12840, "avgTime": "2:48", "bounce": 28.4 },
+  { "path": "/promotions/new-member",       "views": 9217,  "avgTime": "1:52", "bounce": 58.1 },
+  { "path": "/",                            "views": 8432,  "avgTime": "0:41", "bounce": 39.7 },
+  { "path": "/category/fruits",             "views": 6108,  "avgTime": "3:12", "bounce": 22.9 },
+  { "path": "/membership",                  "views": 4991,  "avgTime": "2:05", "bounce": 34.2 }
+]

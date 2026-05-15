@@ -1,0 +1,15 @@
+{
+  "name": "marketing-pulse",
+  "version": "1.0.0",
+  "description": "Claude Code 핸즈온 C 섹션 — GA 마케팅 대시보드 + AI 인사이트",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5175 --no-clipboard",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["google-analytics", "dashboard", "marketing", "ai-insights"]
+}

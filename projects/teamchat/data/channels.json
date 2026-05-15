@@ -1,0 +1,13 @@
+[
+  { "key": "general",   "type": "channel", "name": "일반" },
+  { "key": "marketing", "type": "channel", "name": "마케팅", "unread": 3 },
+  { "key": "dev",       "type": "channel", "name": "개발" },
+  { "key": "design",    "type": "channel", "name": "디자인" },
+  { "key": "support",   "type": "channel", "name": "고객운영", "unread": 7 },
+  { "key": "random",    "type": "channel", "name": "랜덤" },
+
+  { "key": "dm1", "type": "dm", "name": "김지원" },
+  { "key": "dm2", "type": "dm", "name": "박세현" },
+  { "key": "dm3", "type": "dm", "name": "이도윤" },
+  { "key": "dm4", "type": "dm", "name": "최민지" }
+]

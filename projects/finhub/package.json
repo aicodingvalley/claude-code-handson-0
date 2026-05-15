@@ -1,0 +1,15 @@
+{
+  "name": "finhub",
+  "version": "1.0.0",
+  "description": "Claude Code 핸즈온 B 섹션 — 경제 지표·리포트 자동화",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5174 --no-clipboard",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["finance", "report", "automation", "skill", "supabase"]
+}

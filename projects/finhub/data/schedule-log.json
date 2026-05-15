@@ -1,0 +1,7 @@
+[
+  { "timestamp": "2026-05-11 08:00:14", "level": "ok",   "message": "✓ /report 실행 완료 · 1,820 토큰 · reports#142 저장", "nextRun": "2026-05-18 08:00 (D-7)" },
+  { "timestamp": "2026-05-04 08:00:08", "level": "ok",   "message": "✓ /report 실행 완료 · 1,705 토큰 · reports#141 저장" },
+  { "timestamp": "2026-04-27 08:00:11", "level": "ok",   "message": "✓ /report 실행 완료 · 1,890 토큰 · reports#140 저장" },
+  { "timestamp": "2026-04-20 08:01:22", "level": "warn", "message": "⚠ Finnhub API 응답 지연 (재시도 1회) · 정상 완료" },
+  { "timestamp": "2026-04-13 08:00:09", "level": "ok",   "message": "✓ /report 실행 완료 · 1,762 토큰 · reports#138 저장" }
+]

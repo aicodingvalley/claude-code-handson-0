@@ -1,0 +1,15 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Claude Code 핸즈온 A 섹션 — 싱싱박스 고객상담 챗봇 + 블로그 자동 생성기",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5173 --no-clipboard",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["openai", "rag", "chatbot", "claude-code"]
+}

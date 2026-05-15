@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TeamChat · 실시간 협업</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/chat.css" />
+</head>
+<body>
+
+<div class="tc-shell is-narrow">
+  <aside class="tc-sidebar">
+    <div class="head">
+      <div class="logo">T</div>
+      <div class="head-text">
+        <div style="color:white;font-weight:700;font-size:0.875rem">TeamChat</div>
+      </div>
+      <button class="sidebar-toggle" id="sidebar-toggle" type="button" title="사이드바 접기/펼치기 (⌘\\)" aria-label="사이드바 토글">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+    <div class="section">
+      <h4>채널 <a href="#" style="color:#c4b5fd;text-decoration:none">+</a></h4>
+      <ul id="channel-list"></ul>
+    </div>
+    <div class="section">
+      <h4>다이렉트 메시지</h4>
+      <ul id="dm-list"></ul>
+    </div>
+    <div class="me">
+      <div class="avatar">나</div>
+      <div>
+        <div class="name">AI 코딩밸리</div>
+        <div class="status"><span class="dot"></span>온라인</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="tc-main">
+    <header class="tc-header">
+      <div>
+        <h2 id="channel-title"># 일반</h2>
+        <div class="sub" id="channel-sub">팀원 12명 · 회사 전체 채널</div>
+      </div>
+      <div class="tc-header-actions">
+        <div class="live" title="Supabase Realtime"><span class="dot"></span>실시간 연결됨</div>
+        <button class="feat-btn feat-translate" id="auto-translate-toggle" type="button" title="외국어 메시지를 자동으로 번역">
+          🌐 자동 번역 <span class="state" id="translate-state">OFF</span>
+        </button>
+        <button class="feat-btn feat-notes" id="open-notes" type="button" title="현재 대화를 AI 회의록으로 정리">
+          📝 AI 회의록
+        </button>
+      </div>
+    </header>
+    <div class="tc-messages scrollbar-thin" id="messages">로딩 중…</div>
+    <div id="typing-indicator" class="typing-indicator" hidden>
+      <span class="dots"><span></span><span></span><span></span></span>
+      <span id="typing-text">박세현님이 입력 중…</span>
+    </div>
+    <div class="tc-input">
+      <form class="box" id="send-form" autocomplete="off">
+        <span style="color:#94a3b8">+</span>
+        <input id="send-input" placeholder="#일반에 메시지 보내기" />
+        <button type="submit">보내기</button>
+      </form>
+    </div>
+  </main>
+
+  <aside class="tc-rightbar scrollbar-thin" id="members"></aside>
+</div>
+
+<!-- AI 회의록 슬라이드 패널 -->
+<div class="notes-overlay" id="notes-overlay" hidden></div>
+<aside class="notes-panel" id="notes-panel" hidden>
+  <header>
+    <div>
+      <div style="font-size:0.7rem;color:#a78bfa;font-weight:700;letter-spacing:0.05em">AI MEETING NOTES</div>
+      <h3>현재 대화 자동 정리</h3>
+      <div class="meta" id="notes-meta">최근 메시지 9건 기반 · GPT-4o</div>
+    </div>
+    <button class="close" id="close-notes" type="button">×</button>
+  </header>
+  <div class="notes-body" id="notes-body">생성을 시작하려면 다시 열어주세요…</div>
+  <footer>
+    <a href="./meeting-notes.html" class="full-link">전체 회의록 페이지로 →</a>
+  </footer>
+</aside>
+
+<script type="module" src="./js/index-page.js"></script>
+</body>
+</html>

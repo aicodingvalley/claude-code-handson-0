@@ -1,0 +1,7 @@
+[
+  { "name": "Organic Search", "share": 38 },
+  { "name": "Direct",         "share": 24 },
+  { "name": "Paid",           "share": 18 },
+  { "name": "Social",         "share": 14 },
+  { "name": "Referral",       "share": 6 }
+]

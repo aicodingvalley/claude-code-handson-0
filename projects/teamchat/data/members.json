@@ -1,0 +1,15 @@
+[
+  { "name": "김지원",        "status": "online", "flag": "KR" },
+  { "name": "박세현",        "status": "online", "flag": "KR" },
+  { "name": "이도윤",        "status": "online", "flag": "KR" },
+  { "name": "AI 코딩밸리",   "status": "online", "flag": "KR", "isMe": true },
+  { "name": "Mike Chen",     "status": "online", "flag": "US" },
+  { "name": "Sarah O'Hara",  "status": "online", "flag": "US" },
+  { "name": "山田 優子",     "status": "online", "flag": "JP" },
+  { "name": "최민지",        "status": "away",   "flag": "KR" },
+  { "name": "한규민",        "status": "away",   "flag": "KR" },
+  { "name": "田中 翔",       "status": "away",   "flag": "JP" },
+  { "name": "정유리",        "status": "offline","flag": "KR" },
+  { "name": "조하준",        "status": "offline","flag": "KR" },
+  { "name": "Alex Park",     "status": "offline","flag": "US" }
+]

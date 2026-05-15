@@ -1,0 +1,11 @@
+[
+  { "name": "김지원",      "ts": "오전 9:32", "avatar": { "letter": "지", "color": "#fb7185" }, "body": "좋은 아침이에요 👋 오늘 마케팅 캠페인 점검 미팅 11시인 거 다시 한번 알려드려요!" },
+  { "name": "박세현",      "ts": "오전 9:34", "avatar": { "letter": "세", "color": "#60a5fa" }, "body": "네! 어제 GA 데이터 뽑아둔 거 공유드릴게요. 새 캠페인 CTR이 평균 대비 1.8배 나왔습니다." },
+  { "name": "이도윤",      "ts": "오전 9:40", "avatar": { "letter": "도", "color": "#34d399" }, "body": "CTR 1.8배라니 진짜요?! 🎉 어떤 채널이 가장 잘 나왔어요?", "reactions": ["🎉 3", "👀 2"] },
+  { "name": "박세현",      "ts": "오전 9:42", "avatar": { "letter": "세", "color": "#60a5fa" }, "body": "인스타그램 릴스가 압도적이에요. 다만 랜딩 페이지 이탈률은 58%로 좀 높습니다…" },
+  { "name": "AI 코딩밸리", "ts": "오전 9:45", "avatar": { "letter": "나", "color": "#fbbf24" }, "body": "랜딩 페이지 카피 워딩 점검이 필요해 보이네요. 11시 미팅 안건에 추가할게요 ✍️" },
+  { "name": "최민지",      "ts": "오전 9:48", "avatar": { "letter": "민", "color": "#a78bfa" }, "body": "디자인 쪽은 랜딩 시안 B안으로 가시죠? A안은 CTA가 너무 작아 보였어요." },
+  { "name": "김지원",      "ts": "오전 9:51", "avatar": { "letter": "지", "color": "#fb7185" }, "body": "B안 👍 그럼 오늘 미팅에서 카피 워딩만 빠르게 정리하고 바로 적용할게요." },
+  { "name": "Linda Chen",  "ts": "오전 9:55", "avatar": { "letter": "L", "color": "#2dd4bf" }, "lang": "en", "flag": "🇺🇸", "body": "Quick check — should I prepare the English version of the landing copy by EOD? Happy to align with the B-variant.", "translation": "빠른 확인 — 오늘 안에 랜딩 카피 영문 버전을 준비할까요? B안 기준으로 맞출게요." },
+  { "name": "田中 ユウ",   "ts": "오전 9:58", "avatar": { "letter": "田", "color": "#f472b6" }, "lang": "ja", "flag": "🇯🇵", "body": "東京チームでもリールス案を共有しました。CVRの数字、共有いただけると助かります🙏", "translation": "도쿄팀에도 릴스 안건을 공유했어요. CVR 수치 공유해 주시면 도움이 될 것 같습니다 🙏" }
+]

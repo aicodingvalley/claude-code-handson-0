@@ -1,0 +1,9 @@
+[
+  { "name": "최민지",      "ts": "오전 8:42", "avatar": { "letter": "민", "color": "#a78bfa" }, "body": "오늘 인입 티켓 23건, 미처리 7건이에요. 결제 관련이 4건으로 가장 많아요." },
+  { "name": "김지원",      "ts": "오전 8:48", "avatar": { "letter": "지", "color": "#fb7185" }, "body": "결제 4건 모두 카드사 승인 거절인가요, 아니면 우리 쪽 오류?", "reactions": ["👀 1"] },
+  { "name": "최민지",      "ts": "오전 8:52", "avatar": { "letter": "민", "color": "#a78bfa" }, "body": "3건은 카드사, 1건은 우리 결제 모듈 timeout이에요. dev팀에 공유했어요." },
+  { "name": "AI 코딩밸리", "ts": "오전 9:05", "avatar": { "letter": "나", "color": "#fbbf24" }, "body": "timeout 건 로그 확인했고 #1287 PR로 fix 들어갔어요. 오늘 staging 배포 후 확인 부탁드려요." },
+  { "name": "김지원",      "ts": "오전 9:18", "avatar": { "letter": "지", "color": "#fb7185" }, "body": "CSAT 점수 이번 주 4.6/5 — 환불 처리 속도 칭찬 많네요 🙌", "reactions": ["🎉 4", "💯 2"] },
+  { "name": "田中 ユウ",   "ts": "오전 9:35", "avatar": { "letter": "田", "color": "#f472b6" }, "lang": "ja", "flag": "🇯🇵", "body": "日本のお客様から配送日数の問い合わせが急増しています。FAQの更新が必要かもしれません。", "translation": "일본 고객으로부터 배송 일수 문의가 급증하고 있어요. FAQ 업데이트가 필요할 것 같습니다." },
+  { "name": "최민지",      "ts": "오전 9:41", "avatar": { "letter": "민", "color": "#a78bfa" }, "body": "FAQ 업데이트 오늘 중으로 반영하고 공지 띄울게요." }
+]

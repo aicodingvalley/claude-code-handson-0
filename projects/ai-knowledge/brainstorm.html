@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brainstorm.AI · 페르소나 회의실</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/brainstorm.css" />
+</head>
+<body class="bs-bg">
+
+<div class="bs-card">
+  <header class="bs-header">
+    <a class="back" href="../../index.html">←</a>
+    <div class="icon">🧠</div>
+    <div style="flex:1">
+      <div class="title">우리팀 브레인스토밍방 <span style="color:#94a3b8;font-weight:400">5</span></div>
+      <div class="sub">AI 페르소나 4명 · 답변 동시 진행 중</div>
+    </div>
+    <button style="background:none;border:0;font-size:1.25rem;color:#94a3b8;cursor:pointer">≡</button>
+  </header>
+
+  <main id="messages" class="bs-messages scrollbar-thin">로딩 중…</main>
+
+  <form class="bs-input" id="ask-form" autocomplete="off">
+    <button type="button" style="background:none;border:0;color:#94a3b8;font-size:1.25rem">+</button>
+    <input id="ask-input" placeholder="예) 책 읽는 습관을 만들어주는 동네 커뮤니티" />
+    <button type="submit" id="ask-submit">→</button>
+  </form>
+
+  <div id="personas-bar" class="bs-personas"></div>
+</div>
+
+<script type="module" src="./js/brainstorm-page.js"></script>
+</body>
+</html>

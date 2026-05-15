@@ -1,0 +1,158 @@
+.mm-shell {
+  background: #fafbfc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── 상단 네비 ── */
+.mm-nav {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid #eef2f7;
+  padding: 0.75rem 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  z-index: 5;
+}
+.mm-brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: inherit; }
+.mm-logo {
+  width: 2rem; height: 2rem; border-radius: 0.5rem;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  color: white; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.35);
+}
+.mm-actions { display: flex; gap: 0.5rem; font-size: 0.78rem; align-items: center; }
+.mm-btn {
+  padding: 0.4rem 0.85rem; border-radius: 0.5rem; cursor: pointer;
+  text-decoration: none; transition: all 0.15s ease;
+  border: 1px solid transparent;
+}
+.mm-btn.outline { background: white; border-color: #e2e8f0; color: #334155; }
+.mm-btn.outline:hover { border-color: #cbd5e1; background: #f8fafc; }
+.mm-btn.primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white; font-weight: 600;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+}
+.mm-btn.primary:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(99,102,241,0.4); }
+
+/* ── 정보 바 ── */
+.mm-info {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eef2f7;
+  padding: 0.7rem 1.5rem;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.85rem;
+  z-index: 4;
+}
+.mm-info .legend { display: flex; gap: 1rem; font-size: 0.72rem; color: #64748b; }
+.mm-info .legend .dot {
+  width: 10px; height: 10px; border-radius: 50%; display: inline-block;
+  margin-right: 0.3rem; vertical-align: middle;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.6);
+}
+
+/* ── 마인드맵 캔버스 ── */
+#mindmap {
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(99,102,241,0.13) 0%, transparent 45%),
+    radial-gradient(circle at 75% 75%, rgba(168,85,247,0.12) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(236,72,153,0.05) 0%, transparent 55%),
+    linear-gradient(180deg, #fafbff 0%, #f3f4fc 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+#mindmap.is-ready { opacity: 1; }
+
+/* 미세한 도트 그리드 오버레이 */
+#mindmap::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(15,23,42,0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+/* 중앙 부근 부드러운 글로우 */
+#mindmap::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 60vmin; height: 60vmin;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 60%);
+  pointer-events: none;
+  filter: blur(20px);
+}
+
+/* vis-network canvas */
+#mindmap > div { position: relative; z-index: 1; }
+
+/* ── 우측 요약 카드 ── */
+.mm-summary {
+  position: fixed;
+  top: 7.5rem;
+  right: 1.5rem;
+  width: 19rem;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid #eef2f7;
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px rgba(15,23,42,0.08), 0 2px 4px rgba(15,23,42,0.04);
+  padding: 1.15rem 1.25rem;
+  font-size: 0.875rem;
+  z-index: 10;
+}
+.mm-summary h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.65rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em;
+  color: #8b5cf6;
+  display: flex; align-items: center; gap: 0.3rem;
+}
+.mm-summary h4::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: #8b5cf6;
+  animation: mm-pulse 2s infinite;
+}
+.mm-summary p { margin: 0; color: #1e293b; line-height: 1.6; }
+
+@keyframes mm-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.5; transform: scale(1.25); }
+}
+
+/* 온보딩 힌트 — 처음 진입 시 잠깐 떴다 사라짐 */
+.mm-hint {
+  position: absolute;
+  bottom: 1.5rem; left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  padding: 0.55rem 1rem;
+  background: rgba(15,23,42,0.78);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 0.74rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.18);
+  pointer-events: none;
+  z-index: 20;
+  opacity: 0;
+  animation: mm-hint-in 0.5s 0.4s ease forwards;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.mm-hint .dot {
+  width: 3px; height: 3px; border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+}
+.mm-hint.is-hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(6px);
+}
+@keyframes mm-hint-in {
+  to { opacity: 1; }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>chatbot · 페이지 선택</title>
+<link rel="stylesheet" href="./css/base.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-6">
+
+<div class="w-full max-w-2xl">
+  <a href="../../index.html" class="text-slate-500 text-sm hover:text-slate-800 inline-flex items-center gap-1 mb-6">← 전체 프로젝트 허브</a>
+
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center text-white font-bold">💬</div>
+      <div>
+        <div class="text-xs font-bold text-orange-600 uppercase tracking-wider">A · AI 연동하기</div>
+        <h1 class="text-2xl font-bold text-slate-900">chatbot 프로젝트</h1>
+      </div>
+    </div>
+    <p class="text-slate-600 mb-6">싱싱박스 상담 챗봇과 블로그 생성기. 같은 코드 패턴으로 만든 두 도구를 보여줍니다.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href="./chat.html" class="border border-slate-200 hover:border-emerald-400 hover:shadow-md transition rounded-xl p-5 block">
+        <div class="text-3xl mb-2">💬</div>
+        <div class="font-bold text-slate-900">chat.html</div>
+        <div class="text-xs text-emerald-600 font-bold mt-1">A2 — 회사 맥락 반영</div>
+        <p class="text-sm text-slate-500 mt-2">RAG 챗봇 시연 대화</p>
+      </a>
+      <a href="./blog.html" class="border border-slate-200 hover:border-indigo-400 hover:shadow-md transition rounded-xl p-5 block">
+        <div class="text-3xl mb-2">✍️</div>
+        <div class="font-bold text-slate-900">blog.html</div>
+        <div class="text-xs text-indigo-600 font-bold mt-1">A3 — 블로그 생성기</div>
+        <p class="text-sm text-slate-500 mt-2">같은 패턴, 다른 도구</p>
+      </a>
+    </div>
+
+    <div class="mt-6 pt-6 border-t border-slate-100 text-xs text-slate-500 space-y-1">
+      <p>📦 <strong>실행:</strong> <code class="bg-slate-100 px-1.5 py-0.5 rounded">npm install</code> → <code class="bg-slate-100 px-1.5 py-0.5 rounded">npm run dev</code></p>
+      <p>📁 <strong>핵심 파일:</strong> <code>config.js</code>, <code>js/rag.js</code>, <code>js/api.js</code></p>
+      <p>📚 <strong>RAG 문서:</strong> <code>data/docs/</code> 폴더의 5개 마크다운</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

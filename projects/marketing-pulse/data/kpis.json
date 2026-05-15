@@ -1,0 +1,6 @@
+[
+  { "label": "세션",        "value": "48,392", "prev": "43,058", "delta": 12.4 },
+  { "label": "신규 방문자", "value": "31,148", "prev": "28,807", "delta": 8.1 },
+  { "label": "이탈률",      "value": "42.7%",  "prev": "41.4%",  "delta": 3.2, "deltaUnit": "%" },
+  { "label": "전환율",      "value": "3.42%",  "prev": "2.62%",  "delta": 0.8, "deltaUnit": "%p" }
+]

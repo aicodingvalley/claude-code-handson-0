@@ -1,0 +1,9 @@
+[
+  { "name": "김지원",      "ts": "오전 10:14", "flag": "KR", "avatar": { "letter": "지", "color": "#fb7185" }, "body": "안녕하세요 팀! 오늘 새 배포 일정 한번 정리해볼까요?" },
+  { "name": "Mike Chen",   "ts": "오전 10:15", "flag": "US", "avatar": { "letter": "M", "color": "#6366f1" }, "body": "Sounds good. Let's aim for Thursday deploy, the staging tests all passed.", "translation": "좋아요. 목요일 배포를 목표로 잡죠. 스테이징 테스트는 다 통과했어요." },
+  { "name": "山田 優子",   "ts": "오전 10:18", "flag": "JP", "avatar": { "letter": "Y", "color": "#fbbf24" }, "body": "こちらの結合テストもOKです。木曜日のデプロイ、賛成です。", "translation": "저희 쪽 통합 테스트도 OK입니다. 목요일 배포 찬성합니다." },
+  { "name": "이도윤",      "ts": "오전 10:22", "flag": "KR", "avatar": { "letter": "도", "color": "#34d399" }, "body": "그럼 목요일 한국 시간 오후 4시 / 미국 동부 새벽 3시로 일정 잡을게요. 야간 작업 죄송합니다 🙏" },
+  { "name": "Mike Chen",   "ts": "오전 10:24", "flag": "US", "avatar": { "letter": "M", "color": "#6366f1" }, "body": "No worries — I'll handle the US-side monitoring. Just send me the runbook link.", "translation": "괜찮습니다 — 미국 쪽 모니터링은 제가 맡을게요. 런북 링크만 보내주세요." },
+  { "name": "山田 優子",   "ts": "오전 10:27", "flag": "JP", "avatar": { "letter": "Y", "color": "#fbbf24" }, "body": "こちらも見ます。ロールバック手順、念のため共有しておきましょう。", "translation": "저희도 같이 봅니다. 롤백 절차도 만약을 위해 공유해두는 게 좋겠어요." },
+  { "name": "AI 코딩밸리", "ts": "오전 10:30", "flag": "KR", "avatar": { "letter": "나", "color": "#fbbf24" }, "body": "감사합니다! 런북 공유드릴게요. 모두 무사 배포되길 🙏", "autoSent": "🇺🇸 EN · 🇯🇵 JP" }
+]

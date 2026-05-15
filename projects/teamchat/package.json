@@ -1,0 +1,15 @@
+{
+  "name": "teamchat",
+  "version": "1.0.0",
+  "description": "Claude Code 핸즈온 D 섹션 — 미니 슬랙 + AI 회의록 + 실시간 번역",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5176 --no-clipboard",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["supabase", "realtime", "chat", "ai-summary", "translation"]
+}

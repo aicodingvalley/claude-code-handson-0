@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Marketing Pulse · AI 인사이트</title>
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./css/dashboard.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<nav class="mp-nav">
+  <div class="mp-nav-inner">
+    <a class="mp-brand" href="../../index.html">
+      <div class="mp-logo">M</div>
+      <div>
+        <div style="font-weight:700">Marketing Pulse</div>
+        <div style="font-size:0.65rem;color:var(--color-text-muted)">AI 인사이트 모드</div>
+      </div>
+    </a>
+    <div class="mp-actions">
+      <a href="./dashboard.html" class="mp-btn mp-btn-outline">← 대시보드</a>
+      <span style="color:var(--color-text-muted)">📅 2026-05-05 ~ 2026-05-11</span>
+    </div>
+  </div>
+</nav>
+
+<main class="mp-shell">
+  <section class="ai-header">
+    <div style="display:flex;align-items:flex-start;gap:1rem">
+      <div class="icon">🧠</div>
+      <div>
+        <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;opacity:0.9">AI 마케팅 인사이트</div>
+        <h2 id="ai-title">이번 주 가장 주목해야 할 신호 3가지</h2>
+        <div class="meta" id="ai-meta">생성 준비 중…</div>
+      </div>
+    </div>
+    <button id="refresh-btn" class="refresh-pill" title="다시 분석">
+      <span class="refresh-icon">⟳</span>
+      <span id="refresh-stamp">방금 분석</span>
+    </button>
+  </section>
+
+  <section class="lens-bar">
+    <span class="lens-label">관점:</span>
+    <div class="lens-chips" id="lens-chips">
+      <button class="lens-chip is-active" data-lens="overall">📊 전반</button>
+      <button class="lens-chip" data-lens="acquisition">🎯 유입·획득</button>
+      <button class="lens-chip" data-lens="conversion">💰 전환·매출</button>
+      <button class="lens-chip" data-lens="retention">🔁 이탈·리텐션</button>
+      <button class="lens-chip" data-lens="channel">📡 채널 효율</button>
+    </div>
+  </section>
+
+  <section class="ask-bar">
+    <form id="ask-form" class="ask-form">
+      <span class="ask-icon">💬</span>
+      <input type="text" id="ask-input" placeholder="이 데이터에 대해 물어보세요. 예) 왜 결제 전환이 떨어졌지?" autocomplete="off" />
+      <button type="submit" class="ask-submit">물어보기 →</button>
+    </form>
+    <div class="ask-examples">
+      <span>예시:</span>
+      <button class="ask-example" type="button">광고비를 어디에 더 써야 할까?</button>
+      <button class="ask-example" type="button">이번 주 가장 큰 리스크는?</button>
+      <button class="ask-example" type="button">다음 주 액션 3가지 알려줘</button>
+    </div>
+  </section>
+
+  <section id="insight-row" class="insight-row"></section>
+
+  <section class="chart-row">
+    <div class="chart-card">
+      <h3>근거 1 · 페이지별 전환 기여도</h3>
+      <div class="sub">트래픽 비중 대비 전환 비중</div>
+      <canvas id="contribChart" height="120"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>근거 2 · 채널별 ROAS</h3>
+      <div class="sub">광고비 1원당 매출</div>
+      <canvas id="roasChart" height="120"></canvas>
+    </div>
+  </section>
+
+  <section style="background:#fff;border:1px solid var(--color-border);border-radius:0.75rem;padding:1.5rem">
+    <h3 style="margin:0 0 1rem">🛠️ /insight Skill 동작 흐름</h3>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;font-size:0.875rem">
+      <div style="background:#fef3c7;border:1px solid #fde68a;border-radius:0.5rem;padding:0.875rem">
+        <div style="font-size:0.7rem;font-weight:700;color:#92400e">STEP 1</div>
+        <div style="font-weight:600;margin-top:0.25rem">KPI 변화 수집</div>
+        <p style="font-size:0.7rem;color:#475569;margin:0.25rem 0 0">GA Data API로 현재/전주 비교</p>
+      </div>
+      <div style="background:#fff7ed;border:1px solid #fdba74;border-radius:0.5rem;padding:0.875rem">
+        <div style="font-size:0.7rem;font-weight:700;color:#9a3412">STEP 2</div>
+        <div style="font-weight:600;margin-top:0.25rem">OpenAI에 던지기</div>
+        <p style="font-size:0.7rem;color:#475569;margin:0.25rem 0 0">구조화 JSON 강제</p>
+      </div>
+      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:0.5rem;padding:0.875rem">
+        <div style="font-size:0.7rem;font-weight:700;color:#9f1239">STEP 3</div>
+        <div style="font-weight:600;margin-top:0.25rem">3가지 관점 추출</div>
+        <p style="font-size:0.7rem;color:#475569;margin:0.25rem 0 0">변화·주의·추세</p>
+      </div>
+      <div style="background:#eef2ff;border:1px solid #a5b4fc;border-radius:0.5rem;padding:0.875rem">
+        <div style="font-size:0.7rem;font-weight:700;color:#3730a3">STEP 4</div>
+        <div style="font-weight:600;margin-top:0.25rem">화면에 렌더링</div>
+        <p style="font-size:0.7rem;color:#475569;margin:0.25rem 0 0">카드 + 추천 액션</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="./js/insights-page.js"></script>
+</body>
+</html>
